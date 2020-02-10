@@ -13,7 +13,7 @@ public class CurrentCallableThread implements Callable<String> {
     }
 
     @Override
-    public String call() throws Exception {
+    public String call() {
         return accountRecorder.getAccountInformation(accountIndex);
     }
 }
