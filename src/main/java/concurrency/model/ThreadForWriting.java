@@ -1,6 +1,6 @@
-package com.cursor.concurrency.model;
+package concurrency.model;
 
-import com.cursor.concurrency.database.DataBase;
+import concurrency.database.DataBase;
 
 public class ThreadForWriting implements Runnable {
     private final int RANGE_OF_ITERATION = 100;

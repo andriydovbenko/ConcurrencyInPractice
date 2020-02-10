@@ -1,6 +1,6 @@
-package com.cursor.concurrency.model;
+package concurrency.model;
 
-import com.cursor.concurrency.database.DataBase;
+import concurrency.database.DataBase;
 
 public class Counter {
     private int counter = DataBase.getLastValueOfList();

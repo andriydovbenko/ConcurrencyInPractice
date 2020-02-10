@@ -1,8 +1,8 @@
-package com.cursor.concurrency.controller;
+package concurrency.controller;
 
-import com.cursor.concurrency.model.ThreadForWriting;
-import com.cursor.concurrency.model.Counter;
-import com.cursor.concurrency.model.ThreadForReading;
+import concurrency.model.Counter;
+import concurrency.model.ThreadForReading;
+import concurrency.model.ThreadForWriting;
 
 public class Executor {
 

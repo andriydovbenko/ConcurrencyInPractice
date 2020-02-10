@@ -1,4 +1,4 @@
-package com.cursor.concurrency;
+package concurrency;
 
 import com.cursor.concurrency.controller.Executor;
 
