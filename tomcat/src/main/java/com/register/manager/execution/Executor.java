@@ -5,7 +5,10 @@ import com.register.manager.model.CurrentRunnableThread;
 import com.register.manager.model.Login;
 import com.register.manager.service.AccountRecorder;
 
-import java.util.concurrent.*;
+import java.util.concurrent.ExecutionException;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import java.util.concurrent.Future;
 
 public class Executor {
     private AccountRecorder accountRecorder = AccountRecorder.getInstance();
