@@ -1,6 +1,6 @@
-package com.cursor.transaction.model;
+package com.cursor.concurrency.model;
 
-import com.cursor.transaction.db.DataBase;
+import com.cursor.concurrency.database.DataBase;
 
 import java.util.Random;
 
@@ -14,7 +14,6 @@ public class ThreadForReading implements Runnable {
         for (int i = 1; i < ITERATION_VALUE; i++) {
             int randomValue = new Random().nextInt(RANGE_OF_VALUE);
             System.out.println("Operation number " + i + ". Reading from Data Base.");
-
             if (db.getNumberIfPresetOrNull(randomValue) == null) {
                 System.out.println("Number " + randomValue + " doesn't exist");
             } else {

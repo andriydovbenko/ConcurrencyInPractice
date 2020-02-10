@@ -1,6 +1,6 @@
-package com.cursor.transaction;
+package com.cursor.concurrency;
 
-import com.cursor.transaction.execution.Executor;
+import com.cursor.concurrency.controller.Executor;
 
 public class Main {
 

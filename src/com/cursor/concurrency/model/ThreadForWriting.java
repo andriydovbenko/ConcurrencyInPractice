@@ -1,6 +1,6 @@
-package com.cursor.transaction.model;
+package com.cursor.concurrency.model;
 
-import com.cursor.transaction.db.DataBase;
+import com.cursor.concurrency.database.DataBase;
 
 public class ThreadForWriting implements Runnable {
     private final int RANGE_OF_ITERATION = 100;
@@ -17,8 +17,9 @@ public class ThreadForWriting implements Runnable {
     public void run() {
         for (int i = newStartingValue; i < lastIterationValue; i++) {
             counter.incrementCurrentValue();
-            System.out.println("added to DB " + counter.getCounter());
-            db.addNumberToList(counter.getCounter());
+            int count = counter.getCounter();
+            System.out.println("added to DB " + count);
+            db.addNumberToList(count);
         }
     }
 }

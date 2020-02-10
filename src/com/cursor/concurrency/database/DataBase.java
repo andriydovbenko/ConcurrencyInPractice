@@ -1,4 +1,4 @@
-package com.cursor.transaction.db;
+package com.cursor.concurrency.database;
 
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
